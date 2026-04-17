@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Limiter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 Speed Limiter</h1>
+        <p>Current Speed: <span id="currentSpeed">0</span> km/h</p>
+        <p>Limit Set: <span id="limitDisplay">50</span> km/h</p>
+        
+        <div class="control-group">
+            <label for="speedInput">Enter Current Speed:</label>
+            <input type="number" id="speedInput" value="0" min="0">
+            <button onclick="setSpeed()">Set Speed</button>
+        </div>
+
+        <div class="status-box">
+            <h2>Status</h2>
+            <p id="statusMessage">Enter a speed to see the limit enforced.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
